@@ -1,4 +1,5 @@
 @import "sass/_index.scss";
+@import "mystyles/features.scss";
 
 .hover-box{
     height: 70%; 
@@ -8,70 +9,4 @@
 .hover-box:hover {
     background-color: var(--bulma-info-95);
     border-radius: 5px;
-}
-
-.bd-features {
-    --gap: 2rem;
-    --width: 20rem;
-    align-items: center;
-    background-image: linear-gradient(0deg, hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-main-l), 1) 0, hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-main-l), 0) 100%);
-    padding: var(--gap);
-    position: relative;
-}
-
-.bd-feature {
-    --h: 348;
-    --s: 86%;
-    --l: 61%;
-    --a: 0.1;
-    --bg: var(--bulma-info);
-    --bd-width: 0.125em;
-    --radius: 0.75em;
-    --p: 10px;
-    --icon: var(--bulma-warning);
-    background: var(--bg);
-    border-radius: calc(var(--bd-width) + var(--radius));
-    box-shadow: 0 .5em 1em 0 hsla(var(--h), var(--s), var(--l), var(--a)), 0 1em 2em 0 hsla(var(--h), var(--s), var(--l), var(--a));
-    padding: var(--bd-width);
-    transition-duration: var(--bulma-duration);
-    transition-property: box-shadow, transform;
-}
-
-.bd-feature-body {
-    align-items: center;
-    background-color: var(--bulma-scheme-main);
-    border-radius: var(--radius);
-    column-gap: var(--p);
-    display: grid;
-    grid-template-columns: auto 1fr;
-    padding: var(--p) calc(var(--p)* 1.25);
-}
-
-.bd-feature-body .icon {
-    color: var(--icon);
-    grid-row: 1 / span 2;
-}
-
-.bd-feature-title {
-    color: var(--bulma-text-strong);
-    font-size: 1.25em;
-    font-weight: var(--bulma-weight-semibold);
-}
-
-.bd-feature-subtitle {
-    color: var(--bulma-text-weak);
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-    font-weight: 400;
-}
-
-a {
-    color: var(--bulma-link-text);
-    cursor: pointer;
-    text-decoration: none;
-    //transition-duration: var(--bulma-duration);
-    //transition-property: background-color, border-color, color;
 }
