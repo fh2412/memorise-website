@@ -1,1 +1,11 @@
 @import "sass/_index.scss";
+
+.hover-box{
+    height: 70%; 
+    align-self: center;
+}
+
+.hover-box:hover {
+    background-color: #f5f5f5; /* Change to your desired hover color */
+    border-radius: 5px; /* Adjust the border radius for desired roundness */
+  }
