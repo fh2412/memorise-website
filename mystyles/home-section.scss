@@ -22,13 +22,27 @@
     --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
 }
 
+.bd-theme-beta {
+    --theme-h: var(--bulma-danger-h);
+    --theme-s: var(--bulma-danger-s);
+    --theme-l: var(--bulma-danger-l);
+    --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
+}
+
+.bd-theme-memorise {
+    --theme-h: var(--bulma-primary-h);
+    --theme-s: var(--bulma-primary-s);
+    --theme-l: var(--bulma-primary-l);
+    --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
+}
+
 .bd-heading {
     --side-width: 13.5em;
     align-items: center;
-    column-gap: var(--spacing);
+    column-gap: 10rem;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.25em;
+    font-size: 1.5em;
     grid-template-columns: 14rem 1fr 14rem;
     justify-content: center;
     justify-items: center;
@@ -43,4 +57,13 @@
     flex-shrink: 0;
     justify-content: center;
     width: var(--side-width);
+    color: var(--theme-color);;
+}
+
+.bd-heading .bd-heading-title .subtitle{
+    color: var(--theme-color);
+}
+
+.bd-heading-title .title{
+    font-size: 2em;
 }

@@ -23357,8 +23357,8 @@ has-background-danger.is-hoverable:active {
 }
 
 .bd-feature.is-fun {
-  --bg: var(--bulma-warning-light);
-  --icon: var(--bulma-warning);
+  --bg: var(--bulma-primary-light);
+  --icon: var(--bulma-primary);
 }
 
 .bd-feature-body {
@@ -23427,13 +23427,27 @@ a {
   --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
 }
 
+.bd-theme-beta {
+  --theme-h: var(--bulma-danger-h);
+  --theme-s: var(--bulma-danger-s);
+  --theme-l: var(--bulma-danger-l);
+  --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
+}
+
+.bd-theme-memorise {
+  --theme-h: var(--bulma-primary-h);
+  --theme-s: var(--bulma-primary-s);
+  --theme-l: var(--bulma-primary-l);
+  --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
+}
+
 .bd-heading {
   --side-width: 13.5em;
   align-items: center;
-  column-gap: var(--spacing);
+  column-gap: 10rem;
   display: flex;
   flex-wrap: wrap;
-  font-size: 1.25em;
+  font-size: 1.5em;
   grid-template-columns: 14rem 1fr 14rem;
   justify-content: center;
   justify-items: center;
@@ -23448,6 +23462,102 @@ a {
   flex-shrink: 0;
   justify-content: center;
   width: var(--side-width);
+  color: var(--theme-color);
+}
+
+.bd-heading .bd-heading-title .subtitle {
+  color: var(--theme-color);
+}
+
+.bd-heading-title .title {
+  font-size: 2em;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+
+.bd-tw {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40em;
+}
+
+.bd-tw {
+  background-color: var(--bulma-scheme-main-bis);
+  border-radius: var(--bulma-radius-large);
+  flex-shrink: 0;
+  font-size: 1em;
+  padding: 1.25em;
+  text-align: left;
+}
+
+.bd-tw-header {
+  align-items: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bd-tw-author {
+  align-items: center;
+  display: flex;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--bulma-link-text);
+  cursor: pointer;
+  text-decoration: none;
+  transition-duration: var(--bulma-duration);
+  transition-property: background-color, border-color, color;
+}
+
+.bd-tw-avatar {
+  flex-shrink: 0;
+  height: 2.25em;
+  margin-right: 0.5em;
+  width: 2.25em;
+}
+
+.bd-tw-avatar img {
+  border-radius: var(--bulma-radius-rounded);
+  display: block;
+  height: 2.25em;
+  width: 2.25em;
+  overflow: clip;
+}
+
+.bd-tw-fullname {
+  color: var(--bulma-text-strong);
+  display: block;
+  font-size: 1em;
+  font-weight: var(--bulma-weight-bold);
+}
+
+a strong {
+  color: currentColor;
+}
+
+.bd-tw-username {
+  color: var(--bulma-text-weak);
+  display: block;
+  font-size: 0.875em;
+}
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.bd-tw-content {
+  color: var(--bulma-text-strong);
+  font-size: 1em;
+  line-height: 1.4;
+  margin-top: 1em;
 }
 
 .hover-box {

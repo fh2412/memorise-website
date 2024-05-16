@@ -1,0 +1,87 @@
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.bd-tw {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+}
+
+.bd-tw {
+    background-color: var(--bulma-scheme-main-bis);
+    border-radius: var(--bulma-radius-large);
+    flex-shrink: 0;
+    font-size: 1em;
+    padding: 1.25em;
+    text-align: left;
+}
+
+.bd-tw-header {
+    align-items: stretch;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bd-tw-author {
+    align-items: center;
+    display: flex;
+    line-height: 1.2;
+}
+
+a {
+    color: var(--bulma-link-text);
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: var(--bulma-duration);
+    transition-property: background-color, border-color, color;
+}
+
+.bd-tw-avatar {
+    flex-shrink: 0;
+    height: 2.25em;
+    margin-right: .5em;
+    width: 2.25em;
+}
+
+.bd-tw-avatar img {
+    border-radius: var(--bulma-radius-rounded);
+    display: block;
+    height: 2.25em;
+    width: 2.25em;
+    overflow: clip;
+
+}
+
+.bd-tw-fullname {
+    color: var(--bulma-text-strong);
+    display: block;
+    font-size: 1em;
+    font-weight: var(--bulma-weight-bold);
+}
+
+a strong {
+    color: currentColor;
+}
+
+.bd-tw-username {
+    color: var(--bulma-text-weak);
+    display: block;
+    font-size: .875em;
+}
+
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.bd-tw-content {
+    color: var(--bulma-text-strong);
+    font-size: 1em;
+    line-height: 1.4;
+    margin-top: 1em;
+}
