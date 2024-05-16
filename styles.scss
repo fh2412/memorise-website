@@ -1,5 +1,6 @@
 @import "sass/_index.scss";
 @import "mystyles/features.scss";
+@import "mystyles/home-section.scss";
 
 .hover-box{
     height: 70%; 
@@ -9,4 +10,8 @@
 .hover-box:hover {
     background-color: var(--bulma-info-95);
     border-radius: 5px;
+}
+
+.title{
+    --bulma-size-1: 4rem;
 }

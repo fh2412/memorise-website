@@ -23337,7 +23337,7 @@ has-background-danger.is-hoverable:active {
   border-radius: calc(var(--bd-width) + var(--radius));
   box-shadow: 0 0.3em 0.8em 0 var(--bg);
   padding: var(--bd-width);
-  transition-duration: 10ms;
+  transition-duration: 100ms;
   transition-property: box-shadow, transform;
 }
 
@@ -23347,18 +23347,18 @@ has-background-danger.is-hoverable:active {
 }
 
 .bd-feature.is-easy {
-  --bg: var(--bulma-success);
-  --icon: var(--bg);
+  --bg: var(--bulma-link-light);
+  --icon: var(--bulma-link);
 }
 
 .bd-feature.is-beta {
-  --bg: var(--bulma-danger);
-  --icon: var(--bg);
+  --bg: var(--bulma-danger-light);
+  --icon: var(--bulma-danger);
 }
 
 .bd-feature.is-fun {
-  --bg: var(--bulma-warning);
-  --icon: var(--bg);
+  --bg: var(--bulma-warning-light);
+  --icon: var(--bulma-warning);
 }
 
 .bd-feature-body {
@@ -23399,8 +23399,55 @@ a {
   color: var(--bulma-link-text);
   cursor: pointer;
   text-decoration: none;
-  transition-duration: 10ms;
+  transition-duration: 100ms;
   transition-property: background-color, border-color, color;
+}
+
+.bd-home-section {
+  --spacing: 3rem;
+  --bd-section-vertical: var(--bulma-block-spacing);
+  --bd-section-horizontal: var(--bulma-block-spacing);
+  align-items: stretch;
+  background-color: var(--bulma-body-background-color);
+  background-image: linear-gradient(180deg, hsla(var(--theme-h), var(--theme-s), var(--theme-l), 0.1), transparent calc(var(--spacing) * 3));
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  overflow: hidden;
+  padding: calc(var(--spacing) * 3) var(--spacing) calc(var(--spacing) * 3);
+  position: relative;
+  z-index: 1;
+}
+
+.bd-theme-future {
+  --theme-h: var(--bulma-link-h);
+  --theme-s: var(--bulma-link-s);
+  --theme-l: var(--bulma-link-l);
+  --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
+}
+
+.bd-heading {
+  --side-width: 13.5em;
+  align-items: center;
+  column-gap: var(--spacing);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.25em;
+  grid-template-columns: 14rem 1fr 14rem;
+  justify-content: center;
+  justify-items: center;
+  row-gap: calc(var(--spacing) * 0.5);
+  text-align: center;
+}
+
+.bd-heading .bd-heading-button, .bd-heading .bd-heading-icon {
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  width: var(--side-width);
 }
 
 .hover-box {
@@ -23411,6 +23458,10 @@ a {
 .hover-box:hover {
   background-color: var(--bulma-info-95);
   border-radius: 5px;
+}
+
+.title {
+  --bulma-size-1: 4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

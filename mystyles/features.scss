@@ -16,7 +16,7 @@
     border-radius: calc(var(--bd-width) + var(--radius));
     box-shadow: 0 .3em .8em 0 var(--bg);
     padding: var(--bd-width);
-    transition-duration: 10ms;
+    transition-duration: 100ms;
     transition-property: box-shadow, transform;
 }
 
@@ -26,18 +26,18 @@
 }
 
 .bd-feature.is-easy {
-    --bg: var(--bulma-success);
-    --icon: var(--bg);
+    --bg: var(--bulma-link-light);
+    --icon: var(--bulma-link);
 }
 
 .bd-feature.is-beta {
-    --bg: var(--bulma-danger);
-    --icon: var(--bg);
+    --bg: var(--bulma-danger-light);
+    --icon: var(--bulma-danger);
 }
 
 .bd-feature.is-fun {
-    --bg: var(--bulma-warning);
-    --icon: var(--bg);
+    --bg: var(--bulma-warning-light);
+    --icon: var(--bulma-warning);
 }
 
 .bd-feature-body {
@@ -79,6 +79,6 @@ a {
     color: var(--bulma-link-text);
     cursor: pointer;
     text-decoration: none;
-    transition-duration: 10ms;
+    transition-duration: 100ms;
     transition-property: background-color, border-color, color;
 }
