@@ -1,3 +1,10 @@
+@media (max-width: 1180px) {
+    .bd-heading {
+        flex-wrap: wrap;
+    }
+}
+
+
 .bd-home-section {
     --spacing: 3rem;
     --bd-section-vertical: var(--bulma-block-spacing);
@@ -39,9 +46,8 @@
 .bd-heading {
     --side-width: 13.5em;
     align-items: center;
-    column-gap: 10rem;
+    column-gap: calc(var(--spacing)* 2);
     display: flex;
-    flex-wrap: wrap;
     font-size: 1.5em;
     grid-template-columns: 14rem 1fr 14rem;
     justify-content: center;

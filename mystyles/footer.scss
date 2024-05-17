@@ -1,0 +1,39 @@
+.bd-theme-docs {
+    --theme-h: var(--bulma-success-h);
+    --theme-s: var(--bulma-success-s);
+    --theme-l: var(--bulma-success-l);
+    --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
+}
+
+.columns.is-multiline {
+    flex-wrap: wrap;
+}
+
+.columns:last-child {
+    margin-bottom: calc(var(--bulma-column-gap)* -1);
+}
+
+.columns {
+    margin-inline-end: calc(var(--bulma-column-gap)* -1);
+    margin-inline-start: calc(var(--bulma-column-gap)* -1);
+    margin-top: calc(var(--bulma-column-gap)* -1);
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.bd-footer-support-title, .bd-footer-title {
+    font-size: 1.125em;
+    margin-bottom: .5em;
+}
+
+.bd-footer-support-action, .bd-footer-donation-action .paypal-form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

@@ -23403,6 +23403,11 @@ a {
   transition-property: background-color, border-color, color;
 }
 
+@media (max-width: 1180px) {
+  .bd-heading {
+    flex-wrap: wrap;
+  }
+}
 .bd-home-section {
   --spacing: 3rem;
   --bd-section-vertical: var(--bulma-block-spacing);
@@ -23444,9 +23449,8 @@ a {
 .bd-heading {
   --side-width: 13.5em;
   align-items: center;
-  column-gap: 10rem;
+  column-gap: calc(var(--spacing) * 2);
   display: flex;
-  flex-wrap: wrap;
   font-size: 1.5em;
   grid-template-columns: 14rem 1fr 14rem;
   justify-content: center;
@@ -23558,6 +23562,46 @@ span {
   font-size: 1em;
   line-height: 1.4;
   margin-top: 1em;
+}
+
+.bd-theme-docs {
+  --theme-h: var(--bulma-success-h);
+  --theme-s: var(--bulma-success-s);
+  --theme-l: var(--bulma-success-l);
+  --theme-color: hsl(var(--theme-h),var(--theme-s),var(--theme-l));
+}
+
+.columns.is-multiline {
+  flex-wrap: wrap;
+}
+
+.columns:last-child {
+  margin-bottom: calc(var(--bulma-column-gap) * -1);
+}
+
+.columns {
+  margin-inline-end: calc(var(--bulma-column-gap) * -1);
+  margin-inline-start: calc(var(--bulma-column-gap) * -1);
+  margin-top: calc(var(--bulma-column-gap) * -1);
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+
+.bd-footer-support-title, .bd-footer-title {
+  font-size: 1.125em;
+  margin-bottom: 0.5em;
+}
+
+.bd-footer-support-action, .bd-footer-donation-action .paypal-form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hover-box {
