@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorise - Your Upcoming Memory App</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/12b2adc9d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-head">
+            <br>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div id="navbarBasic" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item hover-box" href="../index.html">
+                            <span class="icon has-text-info">
+                                <i class="fas fa-chevron-left fa-lg"></i>
+                            </span>
+                            <span class="is-hidden is-block">
+                                &nbsp;Back
+                            </span>
+                        </a>
+                    </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container box">
+                <div class="columns">
+                    <div class="column">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Max Musterman">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-danger" type="email" placeholder="Email input" id="emailInput" value="example@gmail.com">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </span>
+                    </div>
+                    <p class="help is-danger">This email is invalid</p>
+                </div>
+
+                <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Beta Request</option>
+                                <option>Feature Idea</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Textarea"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" type="submit">Submit</button>
+                    </div>
+                    <div class="control">
+                        <button class="button is-link is-light" href="../index.html">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="column" style="align-content: center;">
+                <img src="../assets/Memorise.png">
+            </div>
+            </div>
+            </div>
+    </section>
+    <script src="form.js"></script>
+</body>
