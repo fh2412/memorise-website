@@ -2,185 +2,366 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memorise - Your Upcoming Memory App</title>
-  <link rel="stylesheet" href="../styles.css">
-  <script src="https://kit.fontawesome.com/12b2adc9d9.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorise - Your Upcoming Memory App</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/12b2adc9d9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <section class="hero is-fullheight">
-    <div class="hero-head">
-      <br>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="logo ml-3 mr-3" href="../index.html" style="width: 200px;">
-            <img src="../assets/Memorise.png" alt="Your company logo" class="logo">
-          </a>
+    <section class="hero">
+        <div class="hero-head">
+            <br>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="logo ml-3 mr-3" href="../index.html" style="width: 200px;">
+                        <img src="../assets/Memorise.png" alt="Your company logo" class="logo">
+                    </a>
 
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasic">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasic" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item hover-box bd-theme-memorise">
+                            <span class="icon has-text-info">
+                                <i class="fa-solid fa-star fa-lg"></i>
+                            </span>
+                            &nbsp;Memorise
+                        </a>
+
+                        <a class="navbar-item hover-box">
+                            <span class="icon has-text-info">
+                                <i class="fa-solid fa-flask-vial fa-lg"></i>
+                            </span>
+                            <span class="is-hidden is-block">
+                                &nbsp;Beta
+                            </span>
+                        </a>
+
+                        <a class="navbar-item hover-box">
+                            <span class="icon has-text-info">
+                                <i class="fas fa-wand-magic-sparkles fa-lg"></i>
+                            </span>
+                            <span class="is-hidden is-block">
+                                &nbsp;Future
+                            </span>
+                        </a>
+
+                        <a class="navbar-item hover-box">
+                            <span class="icon has-text-primary">
+                                <i class="fa-brands fa-instagram fa-xl"></i>
+                            </span>
+                        </a>
+
+                        <a class="navbar-item hover-box" href="https://github.com/fh2412">
+                            <span class="icon has-text-primary">
+                                <i class="fa-brands fa-github-alt fa-xl"></i>
+                            </span>
+                        </a>
+
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-item hover-box">
+                                <span class="icon has-text-primary">
+                                    <i class="fas fa-ellipsis fa-xl"></i>
+                                </span>
+                            </a>
+
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item">
+                                    About
+                                </a>
+                                <a class="navbar-item">
+                                    Team
+                                </a>
+                                <a class="navbar-item">
+                                    Contact
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary" href="sites/form.html">
+                                    <strong>Request Beta</strong>
+                                </a>
+                                <a class="button is-light" href="sites/form.html">
+                                    Submit Idea
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
+        <hr class="divider">
+    </section>
 
-        <div id="navbarBasic" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item hover-box bd-theme-memorise">
-              <span class="icon has-text-info">
-                <i class="fa-solid fa-star fa-lg"></i>
-              </span>
-              &nbsp;Memorise
-            </a>
-
-            <a class="navbar-item hover-box">
-              <span class="icon has-text-info">
-                <i class="fa-solid fa-flask-vial fa-lg"></i>
-              </span>
-              <span class="is-hidden is-block">
-                &nbsp;Beta
-              </span>
-            </a>
-
-            <a class="navbar-item hover-box">
-              <span class="icon has-text-info">
-                <i class="fas fa-wand-magic-sparkles fa-lg"></i>
-              </span>
-              <span class="is-hidden is-block">
-                &nbsp;Future
-              </span>
-            </a>
-
-            <a class="navbar-item hover-box">
-              <span class="icon has-text-primary">
-                <i class="fa-brands fa-instagram fa-xl"></i>
-              </span>
-            </a>
-
-            <a class="navbar-item hover-box" href="https://github.com/fh2412">
-              <span class="icon has-text-primary">
-                <i class="fa-brands fa-github-alt fa-xl"></i>
-              </span>
-            </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-item hover-box">
-                <span class="icon has-text-primary">
-                  <i class="fas fa-ellipsis fa-xl"></i>
-                </span>
-              </a>
-
-              <div class="navbar-dropdown is-boxed">
-                <a class="navbar-item">
-                  About
+    <section class="container">
+        <h1 class="title is-1">Memorise in Details</h1>
+        <div class="bd-features">
+            <div class="grid is-column-gap-5">
+                <a class="bd-feature is-fun" href="#memorise-section">
+                    <div class="bd-feature-body">
+                        <span class="icon is-medium">
+                            <i class="fa-regular fa-lightbulb fa-xl"></i>
+                        </span>
+                        <h2 class="bd-feature-title">Idea</h2>
+                        <h3 class="bd-feature-subtitle">What was the idea?</h3>
+                    </div>
                 </a>
-                <a class="navbar-item">
-                  Team
+                <a class="bd-feature is-beta" href="#beta-section">
+                    <div class="bd-feature-body">
+                        <span class="icon is-medium">
+                            <i class="fas fa-question fa-xl"></i>
+                        </span>
+                        <h2 class="bd-feature-title">Functionality</h2>
+                        <h3 class="bd-feature-subtitle">How does it work?</h3>
+                    </div>
                 </a>
-                <a class="navbar-item">
-                  Contact
+                <a class="bd-feature is-easy" href="#future-section">
+                    <div class="bd-feature-body">
+                        <span class="icon is-medium">
+                            <i class="fas fa-gear fa-xl"></i>
+                        </span>
+                        <h2 class="bd-feature-title">Technologies</h2>
+                        <h3 class="bd-feature-subtitle">What is behind it?</h3>
+                    </div>
                 </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
+                <a class="bd-feature is-free">
+                    <div class="bd-feature-body">
+                        <span class="icon is-medium">
+                            <i class="fa-brands fa-github-alt fa-xl"></i>
+                        </span>
+                        <h2 class="bd-feature-title">100% Free</h2>
+                        <h3 class="bd-feature-subtitle">Open Source on Github!</h3>
+                    </div>
                 </a>
-              </div>
             </div>
-          </div>
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary" href="sites/form.html">
-                  <strong>Request Beta</strong>
-                </a>
-                <a class="button is-light" href="sites/form.html">
-                  Submit Idea
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </nav>
-    </div>
-    <hr class="divider">
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title is-1">Memorise: <br>Your Personal Time Capsule</h1> <br>
-        <h2 class="subtitle has-text-grey">Find out what problems memorise is aiming to solve, <br> what it actual usage is, and how it works. Get to know the idea and <br>how it developt itself step by step into memories.</h2>
-      </div>
-    </div>
-    <div class="hero-foot">
-      <div class="bd-features">
-        <div class="grid is-column-gap-5">
-          <a class="bd-feature is-fun" href="#memorise-section">
-            <div class="bd-feature-body">
-              <span class="icon is-medium">
-                <i class="fa-regular fa-lightbulb fa-xl"></i>
-              </span>
-              <h2 class="bd-feature-title">Idea</h2>
-              <h3 class="bd-feature-subtitle">What was the idea?</h3>
-            </div>
-          </a>
-          <a class="bd-feature is-beta" href="#beta-section">
-            <div class="bd-feature-body">
-              <span class="icon is-medium">
-                <i class="fas fa-question fa-xl"></i>
-              </span>
-              <h2 class="bd-feature-title">Functionality</h2>
-              <h3 class="bd-feature-subtitle">How does it work?</h3>
-            </div>
-          </a>
-          <a class="bd-feature is-easy" href="#future-section">
-            <div class="bd-feature-body">
-              <span class="icon is-medium">
-                <i class="fas fa-gear fa-xl"></i>
-              </span>
-              <h2 class="bd-feature-title">Technologies</h2>
-              <h3 class="bd-feature-subtitle">What is behind it?</h3>
-            </div>
-          </a>
-          <a class="bd-feature is-free">
-            <div class="bd-feature-body">
-              <span class="icon is-medium">
-                <i class="fa-brands fa-github-alt fa-xl"></i>
-              </span>
-              <h2 class="bd-feature-title">100% Free</h2>
-              <h3 class="bd-feature-subtitle">Open Source on Github: Try it!</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
+    <section class="bd-home-section bd-theme-memorise" id="idea-section">
+        <div class="container">
+            <div class="mem-heading">
+                <div class="bd-heading-icon">
+                    <span class="icon is-medium">
+                        <i class="fa-solid fa-lightbulb fa-lg"></i>
+                    </span>
+                </div>
+                <div class="bd-heading-title">
+                    <h2 class="title">The Birth of Memorise:</h2>
+                    <div class="subtitle">A Story of Shared Adventures begins (in the wildest wildnes of Sweden)</div>
+                </div>
+            </div>
+            <br>
+            <div class="columns is-column-gap-4">
+                <div class="column is-8">
+                    <p>
+                        The inspiration for Memorise struck during an unforgettable backpacking trip through Sweden's
+                        Kungsleden trail. This wasn't just any vacation - it was a journey amongst friends, a chance to
+                        forge memories that would last a lifetime. Cameras clicked constantly, capturing breathtaking
+                        landscapes, hilarious mishaps, and moments of pure camaraderie.
+                    </p>
+                    <br>
+                    <p>
+                        But as the excitement of the trip faded, a familiar challenge emerged: sharing the captured
+                        memories. Emails flooded inboxes, overflowing with photos and snippets of the adventure. The
+                        sheer volume made it impossible to compile a cohesive narrative, and precious moments risked
+                        being lost in the digital clutter.
+                    </p>
+                    <br>
+                    <img src="../assets/20230715_160643.jpg" style="border-radius: 15px;">
+                    <br><br>
+                    <p>
+                        This struggle wasn't new. Every group trip, every milestone event, seemed to follow the same
+                        pattern. Photos scattered across devices, stories half-told, the magic of shared experiences
+                        slowly fading. There had to be a better way.
+                    </p>
+                    <br>
+                    <p>
+                        That's when the idea for Memorise blossomed. We envisioned a platform that could centralize
+                        everything related to a specific memory - a digital campfire for friends to gather around and
+                        relive their experiences. No more lost photos, no more fragmented stories. Just a shared space
+                        to collaboratively build a rich tapestry of memories.
+                    </p>
+                    <br>
+                    <p>
+                        Memorise was born from a desire to bridge the gap between captured moments and lasting memories.
+                        With the app, you can easily create shared "memory capsules" for any event - a trip with the
+                        guys, a birthday celebration, a family reunion. Invite your friends, add photos, stories, even
+                        locations, and together, co-curate a digital record of your shared adventure.
+                    </p>
+                    <br>
+                    <p>
+                        The story of Memorise isn't just about technology - it's about the power of shared experiences
+                        and the enduring bonds forged through them. We hope that Memorise becomes your go-to tool for
+                        preserving those precious moments, ensuring that the stories you create together live on, just
+                        as vibrant as the day they were made.
+                    </p>
+                </div>
+                <div class="column">
+                    <article data-likes="16" class="bd-tw">
+                        <header class="db-tw-header">
+                            <a class="bd-tw-author">
+                                <figure class="bd-tw-avatar">
+                                    <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg">
+                                </figure>
+                                <div class="bd-tw-name">
+                                    <strong class="bd-tw-fullname">Gemini</strong>
+                                    <span class="bd-tw-username">When ask about the Kungsleden</span>
+                                </div>
+                            </a>
+                        </header>
+                        <div class="bd-tw-content">
+                            <div class="content">
+                                <h3 class="title">The Kungsleden (King's Trail)</h3>
+                                The Kungsleden, translating to "King's Trail" in English, is a renowned 440-kilometer
+                                (273-mile) hiking route located in Swedish Lapland. It traverses some of the country's
+                                most remote and scenic landscapes, passing through vast wilderness areas and skirting
+                                the highest mountains in Sweden. The trail is known for its breathtaking arctic vistas,
+                                including glaciers, alpine valleys, and pristine lakes.
+                                <br><br>
+                                While considered a moderate hike in terms of technical difficulty, the Kungsleden
+                                presents several challenges for hikers. Here's a breakdown of some key factors:
+                                <br>
+                                <ul>
+                                    <li> <strong>Remoteness:</strong> The trail traverses sparsely populated regions,
+                                        with limited access to amenities and support services. Hikers need to be
+                                        self-sufficient, carrying essential supplies and equipment for the duration of
+                                        their trek.</li>
+                                    <li> <strong>Distance:</strong> Completing the entire Kungsleden is a significant
+                                        undertaking, requiring a well-conditioned physique and the ability to cover long
+                                        distances on foot. Hikers often choose to section-hike the trail over several
+                                        trips.</li>
+                                    <li> <strong>Weather:</strong> The climate in Swedish Lapland can be harsh, with
+                                        unpredictable weather conditions. Hikers need to be prepared for a range of
+                                        possibilities, including rain, wind, snow, and cold temperatures, even during
+                                        the summer months.</li>
+                                </ul><br>
+                                Despite the challenges, the Kungsleden offers a unique and rewarding experience for
+                                hikers seeking an adventure in a breathtaking natural setting.
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="bd-home-section is-support bd-theme-docs has-text-centered">
-    <h3 class="title">How to support Memorise</h3>
-    <div class="bd-footer-supports columns is-multiline">
-      <div class="bd-footer-support column">
-        <p class="bd-footer-support-title">Suggest Feature</p>
-        <div class="bd-footer-support-action">
-          <a class="button" href="sites/form.html">Contribute now</a>
+    <section class="bd-home-section is-support bd-theme-future">
+        <div class="container">
+            <h2 class="title is-3">The Technology Behind Memorise</h2>
+            <br>
+            <div class="columns is-column-gap-5">
+                <div class="column">
+                    <h3 class="subtitle is-4">Building Blocks</h3>
+                    <ul class="list">
+                        <li>
+                            <strong>Node.js (API):</strong> A powerful JavaScript runtime environment that forms the
+                            foundation of Memorise's backend. It allows us to create a scalable and efficient API for
+                            handling data requests.
+                        </li>
+                        <li>
+                            <strong>MySQL (Database):</strong> A robust and reliable relational database that securely
+                            stores all your precious memories and their associated information.
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="subtitle is-4">Frontend & User Experience</h3>
+                    <ul class="list">
+                        <li>
+                            <strong>Angular with TypeScript (JavaScript Framework):</strong> A dynamic JavaScript
+                            framework that structures the user interface and application logic. It provides a clean and
+                            maintainable codebase for a smooth user experience.
+                        </li>
+                        <li>
+                            <strong>HTML5:</strong> The core markup language that defines the structure and content of
+                            the web pages within the app.
+                        </li>
+                        <li>
+                            <strong>SCSS:</strong> A powerful extension of CSS that simplifies styling with variables,
+                            mixins, and nesting, allowing for a clean and maintainable stylesheet.
+                        </li>
+                        <li>
+                            <strong>Angular Material:</strong> A pre-built library of UI components that streamline the
+                            development process and provide a consistent, beautiful user interface.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns is-column-gap-5">
+                <div class="column">
+                    <h3 class="subtitle is-4">Scalability & Security</h3>
+                    <ul class="list">
+                        <li>
+                            <strong>Firebase Authentication:</strong> A secure and user-friendly authentication service
+                            that handles user login and account management.
+                        </li>
+                        <li>
+                            <strong>Firebase Functions:</strong> A serverless framework that allows us to deploy
+                            lightweight backend functionality without managing servers.
+                        </li>
+                        <li>
+                            <strong>Google Cloud Storage:</strong> A scalable and cost-effective storage solution for
+                            efficiently storing all your uploaded photos and media.
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="subtitle is-4">Additional Features</h3>
+                    <ul class="list">
+                        <li>
+                            <strong>Google Maps API:</strong> Integrates interactive maps into the app, allowing you to
+                            visualize the locations associated with your memories.
+                        </li>
+                        <li>
+                            <strong>Google Cloud SQL:</strong> A managed relational database service on Google Cloud
+                            Platform, offering a robust and scalable solution for data storage.
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="bd-footer-support column">
-        <p class="bd-footer-support-title">Register for Beta</p>
-        <div class="bd-footer-support-action">
-          <a class="button" href="sites/form.html">Jump to form</a>
+    </section>
+
+    <section class="bd-home-section is-support bd-theme-docs has-text-centered">
+        <h3 class="title">How to support Memorise</h3>
+        <div class="bd-footer-supports columns is-multiline">
+            <div class="bd-footer-support column">
+                <p class="bd-footer-support-title">Suggest Feature</p>
+                <div class="bd-footer-support-action">
+                    <a class="button" href="sites/form.html">Contribute now</a>
+                </div>
+            </div>
+            <div class="bd-footer-support column">
+                <p class="bd-footer-support-title">Register for Beta</p>
+                <div class="bd-footer-support-action">
+                    <a class="button" href="sites/form.html">Jump to form</a>
+                </div>
+            </div>
+            <div class="bd-footer-support column">
+                <p class="bd-footer-support-title">Make a donation</p>
+                <div class="bd-footer-support-action">
+                    <a class="button">Become a sponsor</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="bd-footer-support column">
-        <p class="bd-footer-support-title">Make a donation</p>
-        <div class="bd-footer-support-action">
-          <a class="button">Become a sponsor</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
 </body>
 
