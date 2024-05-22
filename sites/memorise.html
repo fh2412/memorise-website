@@ -111,10 +111,9 @@
     </section>
 
     <section class="container" id="cards-section">
-        <h1 class="title is-1">Memorise in Details</h1>
         <div class="bd-features">
             <div class="grid is-column-gap-5">
-                <a class="bd-feature is-fun" href="#memorise-section">
+                <a class="bd-feature is-fun" href="#idea-section">
                     <div class="bd-feature-body">
                         <span class="icon is-medium">
                             <i class="fa-regular fa-lightbulb fa-xl"></i>
@@ -123,16 +122,16 @@
                         <h3 class="bd-feature-subtitle">What was the idea?</h3>
                     </div>
                 </a>
-                <a class="bd-feature is-beta" href="#beta-section">
+                <a class="bd-feature is-beta" href="#func-section">
                     <div class="bd-feature-body">
                         <span class="icon is-medium">
-                            <i class="fas fa-question fa-xl"></i>
+                            <i class="fas fa-puzzle-piece fa-xl"></i>
                         </span>
                         <h2 class="bd-feature-title">Functionality</h2>
                         <h3 class="bd-feature-subtitle">How does it work?</h3>
                     </div>
                 </a>
-                <a class="bd-feature is-easy" href="#future-section">
+                <a class="bd-feature is-easy" href="#tech-section">
                     <div class="bd-feature-body">
                         <span class="icon is-medium">
                             <i class="fas fa-gear fa-xl"></i>
@@ -163,7 +162,7 @@
                     </span>
                 </div>
                 <div class="bd-heading-title">
-                    <h2 class="title">The Birth of Memorise:</h2>
+                    <h2 class="title">The Birth of Memorise</h2>
                     <div class="subtitle">A Story of Shared Adventures begins (in the wildest wildnes of Sweden)</div>
                 </div>
             </div>
@@ -262,9 +261,53 @@
         </div>
     </section>
 
+    <section class="bd-home-section is-support bd-theme-beta" id="func-section">
+        <div class="container">
+            <div class="mem-heading">
+                <div class="bd-heading-icon">
+                    <span class="icon is-medium">
+                        <i class="fa-solid fa-puzzle-piece fa-lg"></i>
+                    </span>
+                </div>
+                <div class="bd-heading-title">
+                    <h2 class="title">But how does it work?</h2>
+                    <div class="subtitle">It is time to let you have a look on the software itself!</div>
+                </div>
+            </div>
+            <br>
+            <div class="columns is-column-gap-5 is-vcentered">
+                <div class="column">
+                    <h3 class="subtitle is-4">Creating Memories:</h3>
+                    <ul class="list">
+                        <li>
+                            <strong>Effortless Memory Creation</strong> With just a few taps, create a new "memory" for any event – a trip, a celebration, a reunion.
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="list">
+                        <li>
+                            <img src="../assets/app_scrennshots/Screenshot (11).png" alt="Screenshot 10" class="button js-modal-trigger" data-target="image-modal">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="bd-home-section is-support bd-theme-future" id="tech-section">
         <div class="container">
-            <h2 class="title is-3">The Technology Behind Memorise</h2>
+            <div class="mem-heading">
+                <div class="bd-heading-icon">
+                    <span class="icon is-medium">
+                        <i class="fa-solid fa-gear fa-lg"></i>
+                    </span>
+                </div>
+                <div class="bd-heading-title">
+                    <h2 class="title">Memorise Technologie</h2>
+                    <div class="subtitle">Here is the technologie stack we are currently using. In case you want to contribute :)</div>
+                </div>
+            </div>
             <br>
             <div class="columns is-column-gap-5">
                 <div class="column">
@@ -345,13 +388,13 @@
             <div class="bd-footer-support column">
                 <p class="bd-footer-support-title">Suggest Feature</p>
                 <div class="bd-footer-support-action">
-                    <a class="button" href="sites/form.html">Contribute now</a>
+                    <a class="button" href="form.html">Contribute now</a>
                 </div>
             </div>
             <div class="bd-footer-support column">
                 <p class="bd-footer-support-title">Register for Beta</p>
                 <div class="bd-footer-support-action">
-                    <a class="button" href="sites/form.html">Jump to form</a>
+                    <a class="button" href="form.html">Jump to form</a>
                 </div>
             </div>
             <div class="bd-footer-support column">
@@ -363,6 +406,16 @@
         </div>
     </section>
 
+
+    <div id="image-modal" class="modal">
+        <div class="modal-background">
+        </div>
+        <div class="modal-content">
+            <img src="../assets/app_scrennshots/Screenshot (11).png">
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <script src="memorise.js"></script>
 </body>
 
 </html>
