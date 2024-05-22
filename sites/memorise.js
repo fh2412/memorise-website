@@ -51,4 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const cardToggles = document.querySelectorAll('.card-toggle');
+    
+    cardToggles.forEach((toggle) => {
+      toggle.addEventListener('click', (event) => {
+        const cardContent = event.currentTarget.parentElement.nextElementSibling;
+        cardContent.classList.toggle('is-hidden'); // Toggle visibility
+        
+        // Update toggle icon (optional)
+        const icon = event.currentTarget.querySelector('i');
+        if (icon.classList.contains('fa-angle-down')) {
+          icon.classList.replace('fa-angle-down', 'fa-angle-up'); // Change icon on expand
+        } else {
+          icon.classList.replace('fa-angle-up', 'fa-angle-down'); // Change icon on collapse
+        }
+      });
+    });
+  });
+  
   
