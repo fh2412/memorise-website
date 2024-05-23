@@ -145,37 +145,6 @@
         </div>
     </section>
 
-    <div class="card">
-        <header class="card-header">
-            <p class="card-header-title">Card Title</p>
-            <a class="card-header-icon card-toggle">
-                <i class="fas fa-angle-down"></i> </a>
-        </header>
-        <div class="card-content is-hidden">
-            <p>This is the expandable content of the card. You can add more details here.</p>
-        </div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const cardToggles = document.querySelectorAll('.card-toggle');
-
-            cardToggles.forEach((toggle) => {
-                toggle.addEventListener('click', (event) => {
-                    const cardContent = event.currentTarget.parentElement.nextElementSibling;
-                    cardContent.classList.toggle('is-hidden'); // Toggle visibility
-
-                    // Update toggle icon (optional)
-                    const icon = event.currentTarget.querySelector('i');
-                    if (icon.classList.contains('fa-angle-down')) {
-                        icon.classList.replace('fa-angle-down', 'fa-angle-up'); // Change icon on expand
-                    } else {
-                        icon.classList.replace('fa-angle-up', 'fa-angle-down'); // Change icon on collapse
-                    }
-                });
-            });
-        });
-
-    </script>
 </body>
 
 </html>
