@@ -23623,6 +23623,14 @@ span {
   border: 1px solid #e0e0e0;
 }
 
+.bd-team-fullname {
+  color: black;
+}
+
+.bd-team-profession {
+  color: rgb(75, 75, 75);
+}
+
 .hover-box {
   height: 70%;
   align-self: center;
