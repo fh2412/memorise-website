@@ -23631,6 +23631,11 @@ span {
   color: rgb(75, 75, 75);
 }
 
+.db-tw-pic-center {
+  display: flex;
+  align-items: center;
+}
+
 .hover-box {
   height: 70%;
   align-self: center;
