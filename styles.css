@@ -23636,6 +23636,15 @@ span {
   align-items: center;
 }
 
+.blog-strong {
+  font-weight: 800;
+}
+
+.blog-container {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .hover-box {
   height: 70%;
   align-self: center;
