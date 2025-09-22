@@ -23561,7 +23561,7 @@ a strong {
 }
 
 .bd-tw-username {
-  color: var(--bulma-text-weak);
+  color: var(--bulma-text);
   display: block;
   font-size: 0.875em;
 }
